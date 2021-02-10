@@ -3,6 +3,18 @@
     <head>
         {% include "head.njk" %}
         {% include "json-ld.njk" %}
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+<script type="text/javascript">
+  algoliasearchNetlify({
+    appId: '0JFBOLGXM8',
+    apiKey: 'ea9be9b2889de50de57c9590cfbdb590',
+    siteId: '4e4792c2-9e76-41a7-b523-ba7c81c527eb',
+    branch: 'main',
+    selector: 'div#search',
+  });
+</script>
+
     </head>
     <body class="dark:text-gray-300 dark:bg-dark-body bg-white text-gray-900 tracking-wider font-light overflow-x-hidden sm:overflow-auto">
         <div class="grid grid-flow-col grid-cols-small sm:grid-cols-regular h-screen">
